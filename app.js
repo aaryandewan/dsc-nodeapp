@@ -14,9 +14,9 @@ http.createServer(function (request, response) {
       }}
       response.setHeader('Content-Type', 'application/json');
       response.end(JSON.stringify(jsonObject));
-    // Send the response body as "Hello World"
+
     response.end('Hello World\n');
  }).listen(8081);
 
- // Console will print the message
+
  console.log('Server running at http://127.0.0.1:8081/');
